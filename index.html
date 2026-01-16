@@ -1,12 +1,100 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Company Profile</title>
+    <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
-    <h1>Hello, World!</h1>
-    <p>This is a sample HTML document.</p>
+
+    <nav>
+        <h2>RevoU</h2>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#profile">Our Profile</a></li>
+            <li><a href="#message">Message Us</a></li>
+        </ul>
+    </nav>
+
+    <section id="home" class="home">
+        <h1>Hi, <span id="username">Abdul Latif</span> 👋</h1>
+        <p>Welcome to our RevoU website</p>
+    </section>
+>
+    <section id="profile" class="profile">
+        <h2>Our Profile</h2>
+
+        <div class="banner"></div>
+
+        <div class="info">
+            <h3>About the Company</h3>
+            <p>
+               RevoU (PT Revolusi Cita Edukasi) adalah perusahaan edutech di Indonesia yang berfokus pada pengembangan keterampilan digital dan profesional. RevoU menyediakan berbagai program bootcamp intensif dan kursus online yang dirancang untuk membekali peserta dengan keterampilan yang relevan dengan kebutuhan industri saat ini.
+
+Dengan kurikulum berbasis praktik dan proyek nyata, RevoU membantu mahasiswa, fresh graduate, dan profesional untuk meningkatkan kompetensi di bidang Digital Marketing, Data Analytics, Software Engineering, Product Management, dan Artificial Intelligence. Program RevoU didukung oleh mentor berpengalaman dari industri serta ekosistem pembelajaran yang kolaboratif.
+
+RevoU berkomitmen untuk menjembatani kesenjangan antara dunia pendidikan dan dunia kerja dengan menyediakan pendidikan yang aplikatif, terjangkau, dan berorientasi karier, sehingga lulusan siap bersaing di pasar kerja digital Indonesia maupun global.
+            </p>
+
+            <h3>Vision</h3>
+            <p>Menjadi platform pendidikan teknologi terdepan di Indonesia yang memberdayakan talenta digital untuk bersaing dan berkontribusi di era ekonomi digital global.</p>
+
+            <h3>Mission</h3>
+            <ul>
+                <li>Menyediakan pendidikan digital yang praktis, relevan, dan berbasis kebutuhan industri.</li>
+                <li>Menjembatani kesenjangan antara dunia pendidikan dan dunia kerja melalui kurikulum yang aplikatif.</li>
+                <li>Membekali peserta dengan keterampilan siap kerja, portofolio nyata, dan pengalaman proyek industri.</li>
+                <li> Memberikan akses pendidikan berkualitas yang inklusif dan terjangkau bagi talenta Indonesia.</li>
+                <li>Mendukung pengembangan karier peserta melalui mentorship, komunitas, dan career support berkelanjutan.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="hq">
+        <h2>Our Headquarters</h2>
+        <div class="cities">
+            <div class="city jakarta">
+          <span>Jakarta</span>
+         </div>
+                     <div class="city bandung">
+      <span>Bandung</span>
+    </div>
+                <div class="city surabaya">
+      <span>Surabaya</span>
+    </div>
+        </div>
+    </section>
+
+    <section id="message" class="message">
+        <h2>Message Us</h2>
+
+        <form id="messageForm">
+            <label>Name</label>
+            <input type="text" id="name" />
+
+            <label>Email</label>
+            <input type="email" id="email" />
+
+            <label>Phone</label>
+            <input type="text" id="phone" />
+
+            <label>Message</label>
+            <textarea id="messageText"></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+
+        <div class="result">
+            <h3>Submitted Data</h3>
+            <p>Name: <span id="rName">-</span></p>
+            <p>Email: <span id="rEmail">-</span></p>
+            <p>Phone: <span id="rPhone">-</span></p>
+            <p>Message: <span id="rMessage">-</span></p>
+        </div>
+    </section>
+
+    <script src="js/script.js"></script>
 </body>
 </html>
